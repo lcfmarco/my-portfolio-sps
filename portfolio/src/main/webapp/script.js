@@ -28,11 +28,14 @@ function addRandomGreeting() {
   greetingContainer.innerText = greeting;
 }
 
-async function showHello() {
-    const responseFromServer = await fetch('/hello');
-    const textFromResponse = await responseFromServer.text();
-    const helloContainer = document.getElementById('hello-container');
-    helloContainer.innerText = textFromResponse;
+async function showQuote() {
+    const responseFromServer = await fetch('/MovieQuotes');
+    const textFromResponse = await responseFromServer.json();
+    const helloContainer = document.getElementById('quote-container');
+    const quote = textFromResponse[Math.floor(Math.random() * textFromResponse.length)];
+    helloContainer.innerText = quote;
+
+    //console.log();
 }
 
 
