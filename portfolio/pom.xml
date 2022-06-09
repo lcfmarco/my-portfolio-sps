@@ -27,6 +27,8 @@
       <version>4.0.1</version>
     </dependency>
 
+    
+
     <!-- Jetty -->
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
@@ -37,6 +39,13 @@
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-annotations</artifactId>
       <version>${jetty.version}</version>
+    </dependency>
+
+    <!-- Gson -->
+    <dependency>
+        <groupId>com.google.code.gson</groupId>
+        <artifactId>gson</artifactId>
+        <version>2.9.0</version>
     </dependency>
   </dependencies>
 

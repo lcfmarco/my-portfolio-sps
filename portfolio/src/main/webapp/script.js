@@ -27,3 +27,15 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+async function showQuote() {
+    const responseFromServer = await fetch('/MovieQuotes');
+    const textFromResponse = await responseFromServer.json();
+    const helloContainer = document.getElementById('quote-container');
+    const quote = textFromResponse[Math.floor(Math.random() * textFromResponse.length)];
+    helloContainer.innerText = quote;
+
+    //console.log();
+}
+
+
