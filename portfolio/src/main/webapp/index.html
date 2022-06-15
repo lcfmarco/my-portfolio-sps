@@ -5,8 +5,9 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0_YNPFaxG8Xg4Z6B7DegOERcT8hryagY&callback=initMap"></script>
   </head>
-  <body>
+  <body onload="createMap();">
     <div id="content">
       <h1>Marco's Portfolio</h1>
       <p>This is my portfolio. Welcome!</p>
@@ -38,7 +39,7 @@
         <p id="quote-container"></p>
         <p>Click <a href="/MovieQuotes">here</a> to see the message directly.</p>
     </div>
-    <div id="Forms">
+    <div id="forms">
         <h1>Submit!</h1>
         <form action="/message-me" method="POST">
             <p>Feel free to leave a message:</p>
@@ -46,6 +47,11 @@
             <br/>
             <input type="submit" />
           </form>
+    </div>
+    <div id="MapWords">
+    <h1>Maps!</h1>
+    <div id="map"></div>
+    <p>Testing out Google Maps</p>
     </div>
   </body>
 </html>
