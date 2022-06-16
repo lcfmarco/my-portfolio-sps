@@ -13,3 +13,24 @@
     margin-right: auto;
     width:650px;
 }
+#forms {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+#map {
+    border: thin solid black;
+    height: 500px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#MapWords {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+
